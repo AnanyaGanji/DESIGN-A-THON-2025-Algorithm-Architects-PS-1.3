@@ -1,0 +1,124 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+/* Global Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Full-page background 
+body {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center Content 
+.app-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+} 
+*/
+/* App.css */
+
+/* Reset html and body to cover full height */
+html, body {
+  box-sizing: border-box;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100vh; /* Ensure the body takes full height */
+}
+
+/* Full-screen background for Home and Game Pages */
+.full-background {
+  /* background-image: url('./assets/child.png'); Use relative path */
+  opacity: 0.9;
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+.login-background {
+  /* background-image: url('./assets/image.png'); Use relative path */
+  opacity: 0.9;
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+.analysis-background {
+  /* background-image: url('./assets/admin.png'); Use relative path */
+  opacity: 0.9;
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: repeat; /* Prevent repeating */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+/* No background for Analysis and other pages */
+.no-background {
+  background-color: rgba(255, 255, 255, 0); /* Optional: set a plain color */
+  max-width: 700px;
+  max-height: auto;
+}
+
+/* Content styles */
+.content {
+  
+  min-height: calc(100vh - 40px); /* Ensure the content area takes up full height */
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: flex; /* Use flexbox for content alignment */
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  position: relative; /* Keep content above background */
+  z-index: 1; /* Ensure content is above the background */
+}
+
+
+

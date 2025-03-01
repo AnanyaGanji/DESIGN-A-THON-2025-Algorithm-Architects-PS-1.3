@@ -1,0 +1,101 @@
+/* General Page Styling */
+body {
+    background: #f4f7fc;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Center the main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    padding: 20px;
+}
+
+/* Card Styling */
+.card {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Heading */
+h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    /* margin-bottom: 15px; */
+}
+
+/* File input styling */
+.form-control {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+}
+
+/* Checkbox list container */
+.user-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* Individual checkbox styling */
+.form-check {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Remove border for the last item */
+.form-check:last-child {
+    border-bottom: none;
+}
+
+/* Button Styling */
+.btn-primary {
+    background: #007bff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}
