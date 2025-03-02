@@ -1,0 +1,189 @@
+/* body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #edece7, #eff0f2); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333; 
+    font-family: "Poppins", sans-serif;
+  }
+
+  .dashboard-container {
+    width: 85%;
+    max-width: 900px;
+  }
+  .dashboard-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222; 
+  }
+  
+  .dashboard-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+    opacity: 0.8;
+    color: #444;
+  }
+  .dashboard-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .dashboard-card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .card-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .card-content p {
+    color: #222;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .upload {
+    border-left: 5px solid #ffcc00;
+  }
+  
+  .view {
+    border-left: 5px solid #00cc99;
+  }
+  .dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.9);
+  }
+   */
+/* Dashboard Layout */
+/* Updated styles for Admin Dashboard */
+/* Updated styles for Admin Dashboard */
+.dashboard-container {
+    display: flex; /* Enables horizontal alignment */
+    flex-direction: row; /* Ensures items are side by side */
+    justify-content: flex-start; /* Aligns items to the left */
+    align-items: flex-start; /* Aligns items to the top */
+    height: 100vh; /* Full viewport height */
+    padding: 100px;
+    background: #f8f9fa;
+    gap: 20px; /* Adds spacing between sections */
+    flex-wrap: nowrap; /* Prevents elements from wrapping */
+}
+
+.admin-panel {
+    width: 25%; /* Fixed width for Admin Panel */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: fit-content; /* Adjust height as per content */
+}
+.admin-panel button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.admin-panel button:hover {
+    background: #0056b3;
+}
+
+.admin-panel button:active {
+    background: #004080;
+    transform: scale(0.98);
+}
+.admin-panel h2 {
+    flex:2;
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+.admin-options {
+    list-style: none;
+    padding: 0;
+}
+  
+  .admin-options li {
+    padding: 10px;
+    background: #0073e6;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s ease;
+  }
+  
+  .admin-options li:hover {
+    background: #005bb5;
+  }
+  
+  files-table {
+    width: 100%; /* Takes up the remaining space */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+  .files-table h2 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  .table-container {
+    overflow-x: auto;
+    max-height: 80vh;
+  }
+  .files-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .table th {
+    background: #0073e6;
+    color: white;
+  }
+  
+  .table tbody tr:hover {
+    background: #f1f1f1;
+  }
+  

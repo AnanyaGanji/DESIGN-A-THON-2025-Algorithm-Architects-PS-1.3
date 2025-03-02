@@ -1,0 +1,12 @@
+/* app.css - General styles for the entire app */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+/* Prevent app.css from overriding login.css */
+.container {
+  all: unset; /* Ensures styles are not overridden globally */
+}
